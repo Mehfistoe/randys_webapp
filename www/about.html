@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Randy's Patties</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -46,6 +47,10 @@
             max-width: 960px;
             margin: 2rem auto;
             padding: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
         }
 
         .about-text {
@@ -56,6 +61,7 @@
         .about-image {
             flex: 1;
             text-align: center;
+            height: 100%;
         }
 
         footer {
@@ -69,7 +75,7 @@
 
 <body>
     <header>
-        <h1>Randy's Patties - About</h1>
+        <img src="images/randy_logo.PNG">
     </header>
 
     <nav>
@@ -90,8 +96,8 @@
                 Come experience the Randy's Patties difference!</p>
         </div>
 
-        <div class="about-image">
-            <img src="patties_2.webp">
+        <div class="content-item about-image">
+            <img src="images/patties_2.webp">
         </div>
     </div>
 
