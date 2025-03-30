@@ -30,9 +30,7 @@ actix web. I realize this whole paragraph is redeundant lol.
 async fn main() -> std::io::Result<()> {
     HttpServer::new(|| {
         // HttpServer constructs an application instance
-        App::new()
-            .route("/", web::get().to(index))
-            .service(fs::Files::new("/", "./www").show_files_listing())
+        App::new().service(fs::Files::new("/", "./www"))
     })
     .bind("10.0.1.9:8080")? // Resolves socket address(es) and binds server to created listener(s)
     .run() // start listening for incoming connections
